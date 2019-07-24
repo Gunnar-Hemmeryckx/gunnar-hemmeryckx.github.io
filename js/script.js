@@ -1,10 +1,11 @@
 particlesJS.load('particles-js', 'particles.json', function () {
   console.log('callback - particles.js config loaded');
 });
-$(document).ready(function () {
+$(window).on('load', function (e) {
   $('.navbar').css({ 'background': 'transparent' });
     $('.navbar-brand').css({ 'color': 'white' });
     $('.nav-link').css({ 'color': 'white' });
+    $('.ghLogo').css({ 'color': 'white' });
   $('.nav-link, .navbar-brand').click(function () {
     var sectionTo = $(this).attr('href');
     $('html, body').animate({
