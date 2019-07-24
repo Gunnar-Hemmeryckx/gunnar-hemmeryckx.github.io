@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+.masthead {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+    url("../images/laptop.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../images/laptop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 768px) {
+  .masthead h1 {
+    font-size: 2rem;
+  }
+}
+.masthead h1 span {
+  color: rgb(41, 210, 216);
+}
+.masthead p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 30px 0 60px;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+#about {
+  padding: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
+}
+#about h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+#imageWrapper {
+  text-align: center;
+}
+#skills {
+  padding: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
+  background-color: #f9fbfd;
+}
+#skills h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.progress {
+  margin: 5px 0 5px 0;
+}
+.progress-bar {
+  background-color: rgb(41, 210, 216);
+}
+#portfolio {
+  padding: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
+}
+#portfolio h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+#portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/*.item img*/
+#portfolio .portfolio-item img {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#portfolio .portfolio-item:hover img {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  flex-direction: row;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.overlay a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+#portfolio .portfolio-item:hover .overlay {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  top: 0;
+}
