@@ -13,7 +13,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.masthead .container{
+width: 100%;
+}
 .masthead h1 {
   color: #fff;
   font-size: 3rem;
@@ -64,6 +66,13 @@ body {
 }
 .progress-bar {
   background-color: rgb(41, 210, 216);
+
+  border-radius: 3px;
+  -webkit-transition: width 1.5s ease-in-out;
+  -ms-transition: width 1.5s ease-in-out;
+  -moz-transition: width 1.5s ease-in-out;
+  -o-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
 }
 #portfolio {
   padding: 30px 0 30px 0;
@@ -115,7 +124,7 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.overlay a {
+.overlay div {
   display: inline-block;
   color: #fff;
   font-size: 20px;
@@ -128,4 +137,15 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
   top: 0;
+}
+#contact {
+  padding: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
+  background-color: #f9fbfd;
+}
+
+
+
+#particles-js canvas{
+  position: absolute;
 }
