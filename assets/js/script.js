@@ -3,9 +3,15 @@ particlesJS.load('particles-js', '/assets/particles.json', function () {
 });
 $(window).on('load', function (e) {
   $('.navbar').css({ 'background': 'transparent' });
-    $('.navbar-brand').css({ 'color': 'white' });
-    $('.nav-link').css({ 'color': 'white' });
-    $('.ghLogo').css({ 'color': 'white' });
+  $('.nav-link').css({ 'color': 'white' });
+  $("#ghLogo").attr("src","assets/images/GHLogoWhite.svg");
+
+  $(".nav-link").hover(function () {
+    $(this).css('color', 'rgb(41, 210, 216)');
+  }, function () {
+    $(this).css('color', 'white');
+  });
+
   $('.nav-link, .navbar-brand').click(function () {
     var sectionTo = $(this).attr('href');
     $('html, body').animate({
@@ -13,22 +19,46 @@ $(window).on('load', function (e) {
     }, 1200);
   });
 
-  var delay = 250;
-  $(".progress-bar").each(function (i) {
-    $(this).delay(delay * i).animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
-  });
+  $('#about').waypoint(function () {
+    var delay = 300;
+    $(".progress-bar").each(function (i) {
+      $(this).delay(delay * i).animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
+    });
+  },
+    {
+      offset: '25%'
+    }
+  );
+
 });
-$(window).scroll(function () {
+
+$(window).on('scroll', function () {
   var scroll = $(window).scrollTop();
   if (scroll < 300) {
     $('.navbar').css({ 'background': 'transparent' });
     $('.nav-link').css({ 'color': 'white' });
-    $('.navbar-brand').css({ 'color': 'white' });
     $('.navbar-toggler-icon').removeClass('inverse');
+
+    $(".nav-link").hover(function () {
+      $(this).css('color', 'rgb(41, 210, 216)');
+    }, function () {
+      $(this).css('color', 'white');
+    });
+
+    $("#ghLogo").attr("src", "assets/images/GHLogoWhite.svg");
+
   } else {
-    $('.navbar').css({ 'background': 'rgba(255, 255, 255, 1)'});
+    $('.navbar').css({ 'background': 'rgba(255, 255, 255, 1)' });
     $('.nav-link').css({ 'color': 'black' });
-    $('.navbar-brand').css({ 'color': 'black' });
     $('.navbar-toggler-icon').addClass('inverse');
+
+    $(".nav-link").hover(function () {
+      $(this).css('color', 'rgb(41, 210, 216)');
+    }, function () {
+      $(this).css('color', 'black');
+    });
+
+    $("#ghLogo").attr("src","assets/images/GHLogo.svg");
+
   }
 });

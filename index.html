@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>Gunnar Hemmeryckx</title>
     <script src="https://kit.fontawesome.com/060804b619.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,8 +18,7 @@
     -------------------->
     <nav class="navbar fixed-top navbar-expand-lg">
         <a class="navbar-brand" href="#header">
-            <object type="image/svg+xml" data="assets/images/GHLogo.svg">   
-            </object>
+            <img src="assets/images/GHLogoWhite.svg" id="ghLogo" width="30" height="30" alt="Gunnar">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -51,7 +54,7 @@
                     <hr class="divider my-4">
                 </div>
                 <div class="col-lg-12 align-self-baseline text-center">
-                    <p>Web & App developer</p>
+                    <p id="subtitle">Web <span>&</span> App developer</p>
                 </div>
             </div>
         </div>
@@ -67,7 +70,7 @@
                 <div class="col-lg-6 col-md-12 content">
                     <p>I live in Lennik, a small town in Flanders about 30 minutes from Brussels<br>
                         I just graduated from the Erasmushogeschool Brussels, studied App & Web development and I'm
-                        currently looking for a job. Although my main interest is web development (with some preference
+                        currently looking for a job. Although my main interest is web development (with preference
                         towards Front-end development), I do have some skills in other development areas</p>
                 </div>
                 <div class="col-lg-6 col-md-12" id="imageWrapper">
@@ -197,7 +200,8 @@
             <div class="row mt-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-item">
-                        <img src="assets/images/Fonderie.png" alt="">
+                        <img class="portfolioImage" src="assets/images/Fonderie.png"
+                            alt="School project Fonderie musea app">
                         <div class="overlay">
                             <div>
                                 School project
@@ -207,7 +211,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-item">
-                        <img src="assets/images/postio.png" alt="">
+                        <img class="portfolioImage" src="assets/images/postio.png" alt="School project IOT Postio">
                         <div class="overlay">
                             <div>
                                 School project<br>IOT
@@ -217,7 +221,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-item">
-                        <img src="assets/images/maze.gif" alt="">
+                        <img class="portfolioImage" src="assets/images/maze.gif" alt="maze animation">
                         <div class="overlay">
                             <div>
                                 Animation
@@ -229,7 +233,8 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="portfolio-item">
-                        <img src="assets/images/VilloIOS.png" alt="">
+                        <img class="portfolioImage" src="assets/images/VilloIOS.png"
+                            alt="School project IOS App for Villo Brussels">
                         <div class="overlay">
                             <div>
                                 School project<br>IOS App for Villo Brussels
@@ -256,6 +261,7 @@
             </div>
         </div>
     </section>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -265,6 +271,7 @@
         crossorigin="anonymous"></script>
     <script src="/assets/js/progressbar.min.js"></script>
     <script src="/assets/js/particles.min.js"></script>
+    <script src="/assets/js/jquery.waypoints.min.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
 
