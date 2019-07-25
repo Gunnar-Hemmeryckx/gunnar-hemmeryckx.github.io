@@ -24,9 +24,11 @@ $(window).scroll(function () {
     $('.navbar').css({ 'background': 'transparent' });
     $('.nav-link').css({ 'color': 'white' });
     $('.navbar-brand').css({ 'color': 'white' });
+    $('.navbar-toggler-icon').removeClass('inverse');
   } else {
-    $('.navbar').css({ 'background': 'rgba(255, 255, 255, 1)', 'color': 'black' });
+    $('.navbar').css({ 'background': 'rgba(255, 255, 255, 1)'});
     $('.nav-link').css({ 'color': 'black' });
     $('.navbar-brand').css({ 'color': 'black' });
+    $('.navbar-toggler-icon').addClass('inverse');
   }
 });
