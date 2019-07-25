@@ -35,7 +35,7 @@ $(window).on('load', function (e) {
 $(window).on('scroll', function () {
   var scroll = $(window).scrollTop();
   if (scroll < 300) {
-    $('.navbar').css({ 'background': 'transparent' });
+    $('.navbar').css({ 'background': 'transparent','box-shadow': '','-moz-box-shadow': '','-webkit-box-shadow': '' });
     $('.nav-link').css({ 'color': 'white' });
     $('.navbar-toggler-icon').removeClass('inverse');
 
@@ -48,7 +48,7 @@ $(window).on('scroll', function () {
     $("#ghLogo").attr("src", "assets/images/GHLogoWhite.svg");
 
   } else {
-    $('.navbar').css({ 'background': 'rgba(255, 255, 255, 1)' });
+    $('.navbar').css({ 'background': 'rgba(255, 255, 255, 1)','box-shadow': '0 4px 6px -6px #999','-moz-box-shadow': '0 4px 6px -6px #999','-webkit-box-shadow': '0 4px 6px -6px #999' });
     $('.nav-link').css({ 'color': 'black' });
     $('.navbar-toggler-icon').addClass('inverse');
 
